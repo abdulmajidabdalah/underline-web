@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import imageHeaders1 from "../assets/pngwing.com.png";
 import imageHeaders2 from "../assets/headers2.png";
 import { GrYoutube } from "react-icons/gr";
-
+import { Link } from "react-scroll";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -47,7 +47,15 @@ const Headers = () => {
                   dolore cum est maxime ad minima? "
                 </p>
                 <button className="bg-transparent duration-300 border-2 border-double border-gold-primary lg:px-4 lg:py-3 px-1 py-1 lg:rounded-lg rounded-md hover:bg-gold-secondary hover:text-dark-primary fontPoppins mt-5 capitalize">
-                  let's talk with us
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={40}
+                    duration={500}
+                  >
+                    let's talk with us
+                  </Link>
                 </button>
               </div>
               <div className="lg:h-[600px] h-[400px] w-[50%] flex justify-start lg:pt-10 pt-16">
@@ -71,7 +79,13 @@ const Headers = () => {
                   dolore cum est maxime ad minima? "
                 </p>
                 <button className="bg-light text-dark-primary hover:bg-dark-secondary duration-300 border-2 border-double border-gold-primary lg:px-4 lg:py-3 px-1 py-1 lg:rounded-lg rounded-md  fontPoppins mt-5 capitalize flex justify-start items-center gap-2 hover:text-light hover:border-light text-[10px] lg:text-[18px] lg:leading-[28px]">
-                  subscribe our youtube channel{" "}
+                  <a
+                    href="https://www.youtube.com/@underlineband5946"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    su◘bscribe our youtube channel{" "}
+                  </a>
                   <GrYoutube className="text-red-600" />
                 </button>
               </div>
