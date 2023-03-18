@@ -1,0 +1,12 @@
+.swiper-button-next,
+.swiper-button-prev {
+  color: transparent;
+}
+
+.swiper-pagination-bullet {
+  background-color: darkgrey;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f9f54b;
+}
