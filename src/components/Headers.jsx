@@ -47,13 +47,7 @@ const Headers = () => {
                   dolore cum est maxime ad minima? "
                 </p>
                 <button className="bg-transparent duration-300 border-2 border-double border-gold-primary lg:px-4 lg:py-3 px-1 py-1 lg:rounded-lg rounded-md hover:bg-gold-secondary hover:text-dark-primary fontPoppins mt-5 capitalize">
-                  <Link
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={40}
-                    duration={500}
-                  >
+                  <Link to="contact" offset={40} duration={500}>
                     let's talk with us
                   </Link>
                 </button>
