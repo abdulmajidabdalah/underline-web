@@ -16,7 +16,7 @@ import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
 const Headers = () => {
   return (
     <div id="home">
-      <div className="h-full sm:h-full xl:h-screen 2xl:h-96 bg-dark-primary">
+      <div className="h-full sm:h-full 2xl:h-96 bg-dark-primary">
         <Swiper
           spaceBetween={30}
           effect={"fade"}
