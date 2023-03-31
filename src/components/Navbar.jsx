@@ -71,7 +71,7 @@ export default function Navbar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 lg:h-full h-screen ${
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 lg:h-full md:h-full h-screen ${
               navbar ? "block" : "hidden"
             }`}
           >

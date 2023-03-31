@@ -67,7 +67,7 @@ const RatingCom = () => {
   return (
     <div className="px-2 py-2 bg-dark-secondary text-gold-secondary mt-[-3rem]">
       <p className="text-center my-5">Lets Talk With Us on Website</p>
-      <div className="lg:flex justify-center gap-3 lg:mx-10 mx-1">
+      <div className="lg:flex justify-center gap-3 lg:mx-10 md:mx-4 mx-1">
         <div className="bg-dark-primary px-4 py-4 lg:w-[60%] rounded-sm lg:h-[50vh] lg:mb-0 mb-2">
           <form onSubmit={handleSubmit}>
             <input

@@ -74,7 +74,7 @@ const About = () => {
           <div className="py-3 fontPoppins text-xl">
             <p>The band is punk rock music. Established in 2012.</p>
             <p>Our Personnel :</p>
-            <div className="bg-dark-secondary w-full grid lg:grid-cols-4 grid-cols-1 py-2 px-2 gap-2 mt-4 rounded-md">
+            <div className="bg-dark-secondary w-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 py-2 px-2 gap-2 mt-4 rounded-md">
               <div className={styles.cardStyle}>
                 <p className={styles.borderStyle}>
                   <img
