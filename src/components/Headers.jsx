@@ -32,7 +32,7 @@ const Headers = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="bg-dark-primary lg:h-screen flex justify-center lg:items-center">
+            <div className="bg-dark-primary flex justify-center lg:items-center">
               <div className="lg:ml-12 ml-1 py-2 text-gold-secondary w-[50%] lg:mt-0 mt-20">
                 <h1 className="leading-loose fontHeaders lg:text-6xl capitalize">
                   Underline Is
@@ -58,7 +58,7 @@ const Headers = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-dark-primary lg:h-screen flex justify-center lg:items-center">
+            <div className="bg-dark-primary flex justify-center lg:items-center">
               <div className="lg:ml-12 ml-1 lg:mt-0 mt-20 py-2 text-gold-secondary w-[50%]">
                 <h1 className="leading-loose fontHeaders lg:text-6xl capitalize">
                   Underline Is
