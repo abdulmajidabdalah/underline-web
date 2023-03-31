@@ -18,6 +18,21 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper";
 
+const styles = {
+  imgStyles:
+    "w-full xl:h-[500px] h-[200px] object-cover object-center rounded-md border-2 border-dotted border-light",
+  cardStyle:
+    "bg-gold-secondary rounded-md px-2 py-2 flex justify-start items-center",
+  borderStyle:
+    "bg-gold-primary px-4 py-4 rounded-[50%] hover:bg-light duration-300",
+  imgHoverStyle:
+    "w-[120px] h-[120px] object-cover object-center rounded-[50%] hover:scale-110 duration-300",
+  btnStyle:
+    "bg-dark-primary w-20 px-2 rounded-md text-gold-secondary text-sm flex justify-start items-center gap-1",
+  personStyle:
+    "ml-4 text-start text-dark-primary text-xl fontLogo font-semibold",
+};
+
 const About = () => {
   return (
     <div className="bg-dark-primary text-gold-primary" id="about">
@@ -38,134 +53,110 @@ const About = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img
-                src={img}
-                alt="img"
-                className="w-full xl:h-[500px] h-[200px] object-cover object-center rounded-md border-2 border-dotted border-light"
-              />
+              <img src={img} alt="img" className={styles.imgStyles} />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src={img1}
-                alt="img"
-                className="w-full xl:h-[500px] h-[200px] object-cover object-center rounded-md border-2 border-dotted border-light"
-              />
+              <img src={img1} alt="img" className={styles.imgStyles} />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src={img2}
-                alt="img"
-                className="w-full lg:h-[500px] h-[200px] object-cover object-center rounded-md border-2 border-dotted border-light"
-              />
+              <img src={img2} alt="img" className={styles.imgStyles} />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src={img3}
-                alt="img"
-                className="w-full lg:h-[500px] h-[200px] object-cover object-center rounded-md border-2 border-dotted border-light"
-              />
+              <img src={img3} alt="img" className={styles.imgStyles} />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src={img4}
-                alt="img"
-                className="w-full lg:h-[500px] h-[200px] object-cover object-center rounded-md border-2 border-dotted border-light"
-              />
+              <img src={img4} alt="img" className={styles.imgStyles} />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src={img5}
-                alt="img"
-                className="w-full lg:h-[500px] h-[200px] object-cover object-center rounded-md border-2 border-dotted border-light"
-              />
+              <img src={img5} alt="img" className={styles.imgStyles} />
             </SwiperSlide>
           </Swiper>
           <div className="py-3 fontPoppins text-xl">
             <p>The band is punk rock music. Established in 2012.</p>
             <p>Our Personnel :</p>
             <div className="bg-dark-secondary w-full grid lg:grid-cols-4 grid-cols-1 py-2 px-2 gap-2 mt-4 rounded-md">
-              <div className="bg-gold-secondary rounded-md px-2 py-2 flex justify-start items-center">
-                <p className="bg-gold-primary px-4 py-4 rounded-[50%] hover:bg-light duration-300">
+              <div className={styles.cardStyle}>
+                <p className={styles.borderStyle}>
                   <img
                     src={foto}
                     alt="person"
-                    className="w-[120px] h-[120px] object-cover object-center rounded-[50%] hover:scale-110 duration-300"
+                    className={styles.imgHoverStyle}
                   />
                 </p>
-                <div className="ml-4 text-start text-dark-primary text-xl fontLogo font-semibold">
+                <div className={styles.personStyle}>
                   <p className="capitalize">anggun anggara</p>
                   <p>Vokalis</p>
                   <a
                     href="https://www.instagram.com/anggnanggra/"
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-dark-primary px-2 w-20 rounded-md text-gold-secondary text-sm flex justify-start items-center gap-1"
+                    className={styles.btnStyle}
                   >
                     <AiFillInstagram />{" "}
                     <span className="leading-loose">instagram</span>
                   </a>
                 </div>
               </div>
-              <div className="bg-gold-secondary rounded-md px-2 py-2 flex justify-start items-center">
-                <p className="bg-gold-primary px-4 py-4 rounded-[50%] hover:bg-light duration-300">
+              <div className={styles.cardStyle}>
+                <p className={styles.borderStyle}>
                   <img
                     src={foto1}
                     alt="person"
-                    className="w-[120px] h-[120px] object-cover object-center rounded-[50%] hover:scale-110 duration-300"
+                    className={styles.imgHoverStyle}
                   />
                 </p>
-                <div className="ml-4 text-start text-dark-primary text-xl fontLogo font-semibold">
+                <div className={styles.personStyle}>
                   <p className="capitalize">m. ziqy rianto</p>
                   <p className="capitalize">drummer</p>
                   <a
                     href="https://www.instagram.com/mochziqy/"
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-dark-primary px-2 w-20 rounded-md text-gold-secondary text-sm flex justify-start items-center gap-1"
+                    className={styles.btnStyle}
                   >
                     <AiFillInstagram />{" "}
                     <span className="leading-loose">instagram</span>
                   </a>
                 </div>
               </div>
-              <div className="bg-gold-secondary rounded-md px-2 py-2 flex justify-start items-center">
-                <p className="bg-gold-primary px-4 py-4 rounded-[50%] hover:bg-light duration-300">
+              <div className={styles.cardStyle}>
+                <p className={styles.borderStyle}>
                   <img
                     src={foto2}
                     alt="person"
-                    className="w-[120px] h-[120px] object-cover object-center rounded-[50%] hover:scale-110 duration-300"
+                    className={styles.imgHoverStyle}
                   />
                 </p>
-                <div className="ml-4 text-start text-dark-primary text-xl fontLogo font-semibold">
+                <div className={styles.personStyle}>
                   <p className="capitalize">kahfi abjani</p>
                   <p className="capitalize">bassis</p>
                   <a
                     href="https://www.instagram.com/kahfiabjani/"
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-dark-primary w-20 px-2 rounded-md text-gold-secondary text-sm flex justify-start items-center gap-1"
+                    className={styles.btnStyle}
                   >
                     <AiFillInstagram />{" "}
                     <span className="leading-loose">instagram</span>
                   </a>
                 </div>
               </div>
-              <div className="bg-gold-secondary rounded-md px-2 py-2 flex justify-start items-center">
-                <p className="bg-gold-primary px-4 py-4 rounded-[50%] hover:bg-light duration-300">
+              <div className={styles.cardStyle}>
+                <p className={styles.borderStyle}>
                   <img
                     src={foto3}
                     alt="person"
-                    className="w-[120px] h-[120px] object-cover object-center rounded-[50%] hover:scale-110 duration-300"
+                    className={styles.imgHoverStyle}
                   />
                 </p>
-                <div className="ml-4 text-start text-dark-primary text-xl fontLogo font-semibold">
+                <div className={styles.personStyle}>
                   <p className="capitalize">rismanto</p>
                   <p className="capitalize">gitaris</p>
                   <a
                     href="https://www.instagram.com/risman_putra_samudra/"
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-dark-primary w-20 px-2 rounded-md text-gold-secondary text-sm flex justify-start items-center gap-1"
+                    className={styles.btnStyle}
                   >
                     <AiFillInstagram />{" "}
                     <span className="leading-loose">instagram</span>

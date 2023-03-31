@@ -3,6 +3,12 @@ import { Link } from "react-scroll";
 import "./navbar.css";
 import logo from "../assets/IMG_5715-fotor-bg-remover-20230318174753.png";
 
+const spanStyle =
+  "absolute lg:block hidden duration-300 -bottom-1 left-0 w-0 h-[1px] bg-gold-primary group-hover:w-full group-hover:transition-all";
+
+const navStyle =
+  "text-gold-secondary hover:text-gold-primary cursor-pointer relative group";
+
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
 
@@ -70,7 +76,7 @@ export default function Navbar() {
             }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 fontPoppins">
-              <div className="text-gold-secondary hover:text-gold-primary cursor-pointer relative group">
+              <div className={navStyle}>
                 <Link
                   to="home"
                   spy={true}
@@ -80,10 +86,10 @@ export default function Navbar() {
                   onClick={() => setNavbar(false)}
                 >
                   <p>Home</p>
-                  <span className="absolute lg:block hidden -bottom-1 left-0 w-0 h-[1px] bg-gold-primary group-hover:w-full group-hover:transition-all"></span>
+                  <span className={spanStyle}></span>
                 </Link>
               </div>
-              <div className="text-gold-secondary hover:text-gold-primary cursor-pointer relative group">
+              <div className={navStyle}>
                 <Link
                   to="about"
                   spy={true}
@@ -93,10 +99,10 @@ export default function Navbar() {
                   onClick={() => setNavbar(false)}
                 >
                   <p>About Us</p>
-                  <span className="absolute lg:block hidden -bottom-1 left-0 w-0 h-[1px] bg-gold-primary group-hover:w-full group-hover:transition-all"></span>
+                  <span className={spanStyle}></span>
                 </Link>
               </div>
-              <div className="text-gold-secondary hover:text-gold-primary cursor-pointer relative group">
+              <div className={navStyle}>
                 <Link
                   to="songs"
                   spy={true}
@@ -106,10 +112,10 @@ export default function Navbar() {
                   onClick={() => setNavbar(false)}
                 >
                   <p>Songs</p>
-                  <span className="absolute lg:block hidden -bottom-1 left-0 w-0 h-[1px] bg-gold-primary group-hover:w-full group-hover:transition-all"></span>
+                  <span className={spanStyle}></span>
                 </Link>
               </div>
-              <div className="text-gold-secondary hover:text-gold-primary cursor-pointer relative group">
+              <div className={navStyle}>
                 <Link
                   to="gallery"
                   spy={true}
@@ -119,10 +125,10 @@ export default function Navbar() {
                   onClick={() => setNavbar(false)}
                 >
                   <p>Gallery</p>
-                  <span className="absolute lg:block hidden -bottom-1 left-0 w-0 h-[1px] bg-gold-primary group-hover:w-full group-hover:transition-all"></span>
+                  <span className={spanStyle}></span>
                 </Link>
               </div>
-              <div className="text-gold-secondary hover:text-gold-primary cursor-pointer relative group">
+              <div className={navStyle}>
                 <Link
                   to="contact"
                   spy={true}
@@ -132,7 +138,7 @@ export default function Navbar() {
                   onClick={() => setNavbar(false)}
                 >
                   <p>Contact US</p>
-                  <span className="absolute lg:block hidden -bottom-1 left-0 w-0 h-[1px] bg-gold-primary group-hover:w-full group-hover:transition-all"></span>
+                  <span className={spanStyle}></span>
                 </Link>
               </div>
             </div>

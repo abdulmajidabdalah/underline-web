@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
+const inputStyles =
+  "border lg:col-span-1 col-span-2 border-light focus:outline-none focus:ring-transparent focus:border focus:border-b-1 focus:border-t-0 focus:border-r-0 focus:border-l-0 focus:border-light border-t-0 border-l-0 border-r-0 border-b-1 bg-transparent text-light placeholder-light px-1 py-2 placeholder:text-slate-300";
+
 const Contact = () => {
   const form = useRef();
 
@@ -25,11 +28,11 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <div className="bg-dark-secondary lg:h-screen py-4" id="contact">
+    <div className="bg-dark-secondary pt-5 pb-32" id="contact">
       <h1 className="text-center text-2xl text-gold-primary fontPoppins py-10">
         Contact Us
       </h1>
-      <div className="bg-transparent border border-light lg:mx-20 mx-3 px-4 py-4">
+      <div className="bg-transparent border border-light lg:mx-28 mx-3 lg:px-8 px-4 py-4">
         <h1 className="text-center fontPoppins text-3xl font-bold text-light capitalize">
           how can i help?
         </h1>
@@ -49,26 +52,26 @@ const Contact = () => {
             type="text"
             name="nama"
             placeholder="Nama"
-            className="border lg:col-span-1 col-span-2 border-light focus:outline-none focus:ring-transparent focus:border focus:border-b-1 focus:border-t-0 focus:border-r-0 focus:border-l-0 focus:border-light border-t-0 border-l-0 border-r-0 border-b-1 bg-transparent text-light placeholder-light px-1"
+            className={`${inputStyles}`}
           />
           <input
             type="email"
             name="email"
             placeholder="Email"
-            className="border lg:col-span-1 col-span-2 border-light focus:outline-none focus:ring-transparent focus:border focus:border-b-1 focus:border-t-0 focus:border-r-0 focus:border-l-0 focus:border-light border-t-0 border-l-0 border-r-0 border-b-1 bg-transparent text-light placeholder-light px-1"
+            className={`${inputStyles}`}
           />
           <input
             type="number"
             name="nope"
             placeholder="No. Hp"
-            className="col-span-2 border border-light focus:outline-none focus:ring-transparent focus:border focus:border-b-1 focus:border-t-0 focus:border-r-0 focus:border-l-0 focus:border-light border-t-0 border-l-0 border-r-0 border-b-1 bg-transparent text-light placeholder-light px-1"
+            className={`${inputStyles} lg:col-span-2`}
           />
           <textarea
             name="pesan"
             id=""
             rows="7"
             placeholder="Message"
-            className="col-span-2 bg-transparent border border-light focus:ring-0 px-1 focus:outline-none focus:border focus:border-light placeholder-light text-light"
+            className="col-span-2 bg-transparent border border-light focus:ring-0 px-1 focus:outline-none focus:border focus:border-light placeholder:text-slate-300 text-light py-1 mt-3"
           ></textarea>
           <div className="flex justify-end items-center w-full col-span-2">
             <button className="lg:w-[200px] w-[100px] bg-white tracking-widest text-dark-secondary font-bold fontPoppins text-lg lg:px-2 lg:py-2 py-1">
