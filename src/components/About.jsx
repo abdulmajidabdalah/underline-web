@@ -41,14 +41,14 @@ const About = () => {
               <img
                 src={img}
                 alt="img"
-                className="w-full lg:h-[500px] h-[200px] object-cover object-center rounded-md border-2 border-dotted border-light"
+                className="w-full xl:h-[500px] h-[200px] object-cover object-center rounded-md border-2 border-dotted border-light"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
                 src={img1}
                 alt="img"
-                className="w-full lg:h-[500px] h-[200px] object-cover object-center rounded-md border-2 border-dotted border-light"
+                className="w-full xl:h-[500px] h-[200px] object-cover object-center rounded-md border-2 border-dotted border-light"
               />
             </SwiperSlide>
             <SwiperSlide>

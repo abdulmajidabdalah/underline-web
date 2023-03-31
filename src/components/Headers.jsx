@@ -16,7 +16,7 @@ import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
 const Headers = () => {
   return (
     <div id="home">
-      <div className="h-full sm:h-full 2xl:h-96 bg-dark-primary">
+      <div className="bg-dark-primary">
         <Swiper
           spaceBetween={30}
           effect={"fade"}
@@ -33,7 +33,7 @@ const Headers = () => {
         >
           <SwiperSlide>
             <div className="bg-dark-primary flex justify-center lg:items-center">
-              <div className="lg:ml-12 ml-1 py-2 text-gold-secondary w-[50%] lg:mt-0 mt-20">
+              <div className="lg:ml-12 ml-1 py-2 text-gold-secondary w-[50%] lg:mt-20 mt-20">
                 <h1 className="leading-loose fontHeaders lg:text-6xl capitalize">
                   Underline Is
                 </h1>
@@ -52,7 +52,7 @@ const Headers = () => {
                   </Link>
                 </button>
               </div>
-              <div className="lg:h-[600px] h-[400px] w-[50%] flex justify-start lg:pt-10 pt-16">
+              <div className="lg:h-[600px] h-[400px] w-[50%] flex justify-start lg:pt-28 lg:pl-20 pt-16">
                 <img src={imageHeaders1} alt="" className="h-full" />
               </div>
             </div>
@@ -78,7 +78,7 @@ const Headers = () => {
                     target={"_blank"}
                     rel="noreferrer"
                   >
-                    su◘bscribe our youtube channel{" "}
+                    subscribe our youtube channel{" "}
                   </a>
                   <GrYoutube className="text-red-600" />
                 </button>
